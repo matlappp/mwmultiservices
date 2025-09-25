@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://mwmultiservices.ca/sitemap.xml

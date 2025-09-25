@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipbook</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Tulpen+One&display=swap');
+    :root {
+      --body-bg: #fafafa;
+      --page-bg: #f5f5f5;
+      --dark-text: #2a2935;
+      --baseline: 12px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: var(--body-bg);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cover {
+      width: 720px;
+      height: 510px;
+      box-shadow: 0 0 100px rgba(0,0,0,.3);
+      position: relative;
+    }
+    .book {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      perspective: 2000px;
+      position: relative;
+    }
+    .page {
+      width: 50%;
+      height: 100%;
+      background: var(--page-bg);
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform-origin: left;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+      box-shadow: 0 0 15px rgba(0,0,0,.2);
+      cursor: pointer;
+      backface-visibility: hidden;
+  will-change: transform;
+  z-index: 0;
+    }
+    .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .front, .back {
+      backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+    }
+    .back {
+      transform: rotateY(180deg);
+    }
+    .controls {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+    button {
+      padding: 6px 14px;
+      border: none;
+      background: #333;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="book">
+      <!-- Page 1 -->
+      <div class="page" style="z-index:4;">
+        <div class="front"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/193203/1111.jpg" alt=""></div>
+        <div class="back"><img src="./assets/grid8-v.JPG" alt=""></div>
+      </div>
+      <!-- Page 2 -->
+      <div class="page" style="z-index:3;">
+        <div class="front"><img src="./assets/gouttieres.JPG" alt=""></div>
+        <div class="back"><img src="./assets/amenagement.JPG" alt=""></div>
+      </div>
+      <!-- Page 3 -->
+      <div class="page" style="z-index:2;">
+        <div class="front"><img src="./assets/grid6-v.JPG" alt=""></div>
+        <div class="back"><img src="./assets/grid3-p.jpeg" alt=""></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
+  </div>
+
+  <script>
+    // Smooth forward/back flips with proper z-index handling
+const pages = Array.from(document.querySelectorAll('.page'));
+let current = 0;
+let isAnimating = false;
+
+// Ensure this matches your CSS transition duration (ms)
+const TRANSITION_TIMEOUT = 1200;
+
+function updateStacking() {
+  pages.forEach((page, index) => {
+    if (index < current) {
+      // already flipped -> keep behind
+      page.style.transform = 'rotateY(-180deg)';
+      page.style.zIndex = index;
+    } else {
+      // not flipped -> on top
+      page.style.transform = 'rotateY(0deg)';
+      page.style.zIndex = pages.length - index;
+    }
+  });
+}
+
+function animateFlip(page, toFlipped, finishCallback) {
+  if (!page) return;
+  isAnimating = true;
+
+  // Bring this page on top for the animation
+  page.style.zIndex = pages.length + 100;
+
+  // Force style application before changing transform
+  page.getBoundingClientRect();
+
+  // Trigger the transform
+  page.style.transform = toFlipped ? 'rotateY(-180deg)' : 'rotateY(0deg)';
+
+  let done = false;
+  function onEnd(e) {
+    if (e && e.propertyName !== 'transform') return;
+    if (done) return;
+    done = true;
+    page.removeEventListener('transitionend', onEnd);
+    finishCallback();
+    isAnimating = false;
+  }
+
+  page.addEventListener('transitionend', onEnd);
+
+  // Fallback in case transitionend doesn't fire
+  setTimeout(() => {
+    if (!done) onEnd();
+  }, TRANSITION_TIMEOUT);
+}
+
+function flipNext() {
+  if (isAnimating || current >= pages.length) return;
+  const pageToFlip = pages[current]; // flip this one forward
+  animateFlip(pageToFlip, true, () => {
+    current++;
+    updateStacking();
+  });
+}
+
+function flipPrev() {
+  if (isAnimating || current <= 0) return;
+  const pageToUnflip = pages[current - 1]; // unflip this one
+  animateFlip(pageToUnflip, false, () => {
+    current--;
+    updateStacking();
+  });
+}
+
+// Hook up your buttons (make sure #next and #prev exist)
+const nextBtn = document.getElementById('next');
+const prevBtn = document.getElementById('prev');
+if (nextBtn) nextBtn.addEventListener('click', flipNext);
+if (prevBtn) prevBtn.addEventListener('click', flipPrev);
+
+// Optional: clicking the topmost page flips forward; clicking the last flipped page flips back
+pages.forEach((page, idx) => {
+  page.addEventListener('click', () => {
+    if (isAnimating) return;
+    if (idx === current) flipNext();
+    else if (idx === current - 1) flipPrev();
+  });
+});
+
+// initialize
+updateStacking();
+
+  </script>
+</body>
+</html>
