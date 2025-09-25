@@ -33,8 +33,11 @@
     .hero-main.index-hero h1, .hero-main.service-hero h2 {
         font-size: 1.3rem;
     }
-    section, .hero-top {
+    section {
         padding: 5rem 3rem;
+    }
+    .hero-top {
+        padding: 3rem;
     }
     .footer-info {
         flex-direction: column;
@@ -194,5 +197,6 @@
         left: -15px;
     }
 }
+
 
 
