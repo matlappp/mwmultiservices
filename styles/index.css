@@ -190,7 +190,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 }
 .valeurs-wrap > div {
     width: 100%;
@@ -243,3 +243,4 @@ header {
     padding: 1rem;
 
 }
+
