@@ -1,0 +1,225 @@
+body {
+    background-color: var(--grey-1) !important;
+}
+header {
+    background-color: transparent !important;
+    position: absolute;
+    z-index: 10;
+}
+.hero {
+    position: relative;
+    height: 80dvh;
+    overflow: hidden;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(22,22,22,0.3) 0%,
+        var(--grey-1) 100%
+    );
+    z-index: 1;
+    pointer-events: none; 
+}
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(to bottom, var(--grey-1) 0%,
+        #111111D9 10%,
+        transparent 35%,
+        transparent 15%,
+        #111111E6 500%,
+        var(--grey-1) 50%);
+    z-index: -1;
+    pointer-events: none;
+}
+.hero-main {
+    position: absolute;
+    align-items: center;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+.hero-main h1 {
+    font-size: 5rem;
+    font-family: RobotoExtraBold;
+}
+.section-2-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.section-2-title h2 {
+    font-family: RobotoSemiBold;
+    font-size: 2.6rem;
+}
+.section-2-title p {
+    max-width: 500px;
+}
+.section-3 {
+    background-color: var(--white-1);
+}
+.section-2-wrap {
+    display: flex;
+    color: var(--white-1);
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.cut {
+    background-color: var(--brown-1);
+    color: var(--grey-1);
+    border-top: 2px solid var(--grey-1);
+    border-bottom: 2px solid var(--grey-1);
+}
+.cut h3 {
+    font-family: RobotoSemiBold;
+    font-size: 2rem;
+}
+.cut-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.cut-main {
+    display: flex;
+    gap: 2rem;
+}
+.cut-cell {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cut-cell h4 {
+    font-family: RobotoSemiBold;
+    font-size: 1.7rem;
+}
+.cut-cell p {
+    font-size: 1rem;
+}
+.second {
+    padding: 3rem 4rem !important;
+}
+.under {
+    text-align: center;
+    justify-content: center !important;
+}
+.under .section-2-title {
+    align-items: center;
+}
+.under p, .under h2 {
+    max-width: none !important;
+}
+.section-2 h2 {
+    max-width: 500px;
+}
+.section-2-img img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    max-height: 500px;
+}
+.section-2-main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.section-3-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section-3-main h2 {
+    color: var(--grey-1);
+    font-family: RobotoSemiBold;
+    font-size: 2.6rem;
+}
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+.section-grid img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    max-height: 300px;
+}
+.services {
+    background-color: var(--white-1);
+    color: var(--grey-1);
+}
+.services-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.service-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.service-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+.service-main h3 {
+    font-family: RobotoSemiBold;
+    font-size: 1.6rem;
+}
+.service-main p {
+    font-size: 0.95rem;
+}
+.service-img {
+    display: block;
+    width: 100%;
+}
+.service-img img {
+    object-fit: cover;
+    object-position: center;
+    width: 500px;
+    height: 400px;
+}

@@ -1,0 +1,27 @@
+.section-2 {
+    color: var(--grey-1);
+}
+.section-2-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.section-2-main {
+    display: flex;
+    gap: 1rem;
+}
+.forfait-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+    border-radius: 15px;
+    border: 1px solid var(--grey-1);
+}
+.forfait-cell ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
