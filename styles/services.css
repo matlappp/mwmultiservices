@@ -75,6 +75,9 @@ header {
     font-size: 5rem;
     font-family: RobotoExtraBold;
 }
+.hero-main h2 {
+    font-family: RobotoBold;
+}
 .section-2-title {
     display: flex;
     flex-direction: column;
@@ -222,4 +225,5 @@ header {
     object-position: center;
     width: 500px;
     height: 400px;
+
 }
