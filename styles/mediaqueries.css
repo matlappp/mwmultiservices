@@ -27,10 +27,10 @@
     }
 }
 @media (max-width: 768px) {
-    .hero-main.index-hero h2 {
+    .hero-main.index-hero h2, .hero-main.service-hero h1 {
         font-size: 3.5rem;
     }
-    .hero-main.index-hero h1 {
+    .hero-main.index-hero h1, .hero-main.service-hero h2 {
         font-size: 1.3rem;
     }
     section, .hero-top {
@@ -128,10 +128,10 @@
         width: 100%;
         right: -100%;
     }
-    .hero-main.index-hero h2 {
+    .hero-main.index-hero h2, .hero-main.service-hero h1 {
         font-size: 2.5rem;
     }
-    .hero-main.index-hero h1 {
+    .hero-main.index-hero h1, .hero-main.service-hero h2 {
         font-size: 1.1rem;
     }
     .left, .right {
