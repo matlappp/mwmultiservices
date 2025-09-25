@@ -152,6 +152,10 @@ header {
     justify-content: center;
     gap: 0.3rem;
 }
+.stats-cell div {
+    text-align: center;
+    text-wrap: nowrap;
+}
 .stat {
     font-family: RobotoSemiBold;
     font-size: 3.4rem;
@@ -237,4 +241,5 @@ header {
 .accordion-item.active .accordion-content {
     max-height: 300px;
     padding: 1rem;
+
 }
