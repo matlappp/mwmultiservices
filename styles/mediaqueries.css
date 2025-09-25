@@ -51,6 +51,9 @@
         align-items: center;
         justify-content: center;
     }
+    .valeurs-wrap {
+        flex-direction: column;
+    }
     .stats {
         flex-direction: column;
         gap: 1.5rem;
@@ -191,4 +194,5 @@
         left: -15px;
     }
 }
+
 
