@@ -27,11 +27,11 @@ h2 {
     gap: 0.6rem;
 }
 .equipe-img {
-    width: 100%; 
-    max-width: 250px;
-    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
-    flex: 1 1 250px;
+    flex: 1 1 400px;
 }
 .equipe-img img {
     width: 100%;
@@ -44,7 +44,7 @@ h2 {
     flex-direction: column;
     gap: 0.4rem;
     width: 100%;
-    max-width: 250px;
+    max-width: 450px;
 }
 .name {
     text-transform: uppercase;
@@ -179,4 +179,5 @@ h2 {
     background-color: var(--grey-1);
 
 }
+
 
