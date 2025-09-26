@@ -42,6 +42,12 @@
     .hero-top {
         padding: 3rem;
     }
+    .sidebar ul a, .sidebar ul button:not(#openFormBtn2) {
+        font-size: 1.2rem;
+    }
+    #sidebarServicesBtn svg {
+        width: 28px;
+    }
     .footer-info {
         flex-direction: column;
         text-align: center;
@@ -202,3 +208,4 @@
         font-size: 2rem;
     }
 }
+
