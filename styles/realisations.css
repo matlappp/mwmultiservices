@@ -35,6 +35,7 @@
     text-align: center;
     padding: 1rem;
     cursor: pointer;
+    font-family: RobotoSemiBold;
 }
 .realisation-dropdown {
     max-height: 0;
