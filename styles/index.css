@@ -74,6 +74,7 @@ header {
 .hero-main h2 {
     font-size: 5rem;
     font-family: RobotoExtraBold;
+    text-wrap: nowrap;
 }
 .separate {
     display: flex;
@@ -248,3 +249,4 @@ header {
     max-height: 350px;
     padding: 1rem;
 }
+
