@@ -164,7 +164,7 @@ header #check {
 .sidebar ul a, .sidebar ul button:not(#openFormBtn2) {
     text-decoration: none;
     color: var(--grey-1);
-    font-weight: 600;
+    font-family: RobotoBold;
     font-size: 1.4rem;
     border: none;
     background-color: transparent;
@@ -191,10 +191,8 @@ header #check {
 #sidebarServicesBtn {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 0.5rem;
-    width: 120px !important;
-    padding: 0 !important;
+    width: 120px;
 }
 #sidebarServicesBtn.open svg {
     transform: rotate(180deg);
@@ -592,3 +590,4 @@ footer .max-container {
     gap: 0.6rem;
 
 }
+
