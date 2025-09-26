@@ -27,6 +27,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 main p {
     line-height: 1.6em;
+    font-size: 0.95rem;
 }
 ul:not(.forfait-cell ul) {
     padding-left: 0;
@@ -589,4 +590,5 @@ footer .max-container {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+
 }
