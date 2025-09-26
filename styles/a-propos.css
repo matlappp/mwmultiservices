@@ -59,58 +59,25 @@ h2 {
     margin: 100px auto;
     width: 100%;
 }
-/*.container {
-    padding: 10px 50px;
-    position: relative;
-    width: 50%;
-    animation: movedown 1s linear forwards;
-    opacity: 0;
-}
-@keyframes movedown {
-    0% {
-        opacity: 1;
-        transform: translateY(-30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-.container:nth-child(1) {
-    animation-delay: 0s;
-}
-.container:nth-child(2) {
-    animation-delay: 1s;
-}
-.container:nth-child(3) {
-    animation-delay: 2s;
-}
-.container:nth-child(4) {
-    animation-delay: 3s;
-}*/
 .container {
   padding: 10px 50px;
   position: relative;
   width: 50%;
-  opacity: 0;               /* start hidden */
-  transform: translateY(-30px); /* start offset */
+  opacity: 0;
+  transform: translateY(-30px);
 }
-
-/* When container is visible, play animation */
 .container.show {
   animation: movedown 1s ease forwards;
 }
-
-/* Keyframes */
 @keyframes movedown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
 }
 .container h4 {
     color: var(--white-1);
@@ -212,3 +179,4 @@ h2 {
     background-color: var(--grey-1);
 
 }
+
