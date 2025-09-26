@@ -165,6 +165,9 @@ header {
     justify-content: space-between;
     gap: 2rem;
 }
+.section-3-wrap {
+    width: 100%;
+}
 .section-3-main {
     display: flex;
     flex-direction: column;
@@ -224,3 +227,4 @@ header {
     height: 400px;
 
 }
+
