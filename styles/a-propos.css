@@ -59,7 +59,7 @@ h2 {
     margin: 100px auto;
     width: 100%;
 }
-.container {
+/*.container {
     padding: 10px 50px;
     position: relative;
     width: 50%;
@@ -87,6 +87,30 @@ h2 {
 }
 .container:nth-child(4) {
     animation-delay: 3s;
+}*/
+.container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  opacity: 0;               /* start hidden */
+  transform: translateY(-30px); /* start offset */
+}
+
+/* When container is visible, play animation */
+.container.show {
+  animation: movedown 1s ease forwards;
+}
+
+/* Keyframes */
+@keyframes movedown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .container h4 {
     color: var(--white-1);
@@ -186,4 +210,5 @@ h2 {
 }
 .section-2 {
     background-color: var(--grey-1);
+
 }
