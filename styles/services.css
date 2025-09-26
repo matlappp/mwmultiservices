@@ -213,9 +213,6 @@ header {
     font-family: RobotoSemiBold;
     font-size: 1.6rem;
 }
-.service-main p {
-    font-size: 0.95rem;
-}
 .service-img {
     display: block;
     width: 100%;
