@@ -382,7 +382,27 @@
     </div>
     <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     <script src="./scripts/script.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const containers = document.querySelectorAll(".container");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target); // only animate once
+      }
+    });
+  }, { threshold: 0.2 }); // trigger when 20% visible
+
+  containers.forEach((container, index) => {
+    container.style.animationDelay = `${index * 0.5}s`; // stagger
+    observer.observe(container);
+  });
+});
+</script>
 </body>
 </html>
+
 
 
