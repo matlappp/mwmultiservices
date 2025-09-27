@@ -12,6 +12,10 @@
     }
     .sidebar-label {
         display: flex !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 @media (max-width: 1024px) {
@@ -140,16 +144,14 @@
         font-size: 0.95rem;
     }
 }
-@media (min-width: 601px) and (max-width: 1200px) {
-    .sidebar-label {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
 @media (max-width: 600px) {
-    nav button {
+    #openFormBtn span {
+        display: none;
+    }
+    #openFormBtn::after {
+        content: "Soumission";
+    }
+    .svg-logo > g {
         display: none;
     }
     .sidebar {
@@ -208,4 +210,5 @@
         font-size: 2rem;
     }
 }
+
 
