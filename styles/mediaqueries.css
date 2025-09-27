@@ -90,6 +90,7 @@
     }
     .service-cell {
         flex-direction: column;
+        gap: 2rem;
     }
     .service-img img {
         width: 100%;
@@ -164,10 +165,6 @@
     .hero-main.index-hero h1, .hero-main.service-hero h2 {
         font-size: 1.1rem;
     }
-    .left, .right {
-        padding: 1rem;
-        font-size: 0.95rem;
-    }
     .left button, .right button {
         width: 160px;
     }
@@ -210,5 +207,6 @@
         font-size: 2rem;
     }
 }
+
 
 
