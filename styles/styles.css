@@ -410,6 +410,7 @@ nav li > a:not(.home-svg):hover::after, nav li > button:hover::after {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    justify-content: center;
 }
 .testimonial-text {
     font-size: 1.05rem;
@@ -591,5 +592,6 @@ footer .max-container {
     gap: 0.6rem;
 
 }
+
 
 
