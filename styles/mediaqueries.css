@@ -146,6 +146,10 @@
     }
 }
 @media (max-width: 600px) {
+    .separate .left, .separate .right {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
     #openFormBtn span {
         display: none;
     }
@@ -207,6 +211,7 @@
         font-size: 2rem;
     }
 }
+
 
 
 
