@@ -239,7 +239,7 @@ nav {
     gap: 1rem;
 }
 .cta-btn {
-    background-color: var(--brown-1);
+    background-color: var(--white-1);
     border: none;
     padding: 0.8rem 1.2rem;
     border-radius: 50px;
@@ -592,6 +592,7 @@ footer .max-container {
     gap: 0.6rem;
 
 }
+
 
 
 
