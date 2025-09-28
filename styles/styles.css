@@ -412,6 +412,15 @@ nav li > a:not(.home-svg):hover::after, nav li > button:hover::after {
     gap: 1rem;
     justify-content: center;
 }
+.testimonial-stars {
+    display: flex;
+    gap: 0.5rem;
+}
+.testimonials-stars svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white-1);
+}
 .testimonial-text {
     font-size: 1.05rem;
     line-height: 1.5em;
@@ -592,6 +601,7 @@ footer .max-container {
     gap: 0.6rem;
 
 }
+
 
 
 
