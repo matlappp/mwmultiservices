@@ -125,7 +125,7 @@
         flex-direction: column;
     }
     .contact-hero {
-        height: 1400px;
+        height: 1300px;
     }
     .contact-info h1 {
         font-size: 2rem;
@@ -215,6 +215,7 @@
         font-size: 2rem;
     }
 }
+
 
 
 
