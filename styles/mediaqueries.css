@@ -103,6 +103,33 @@
     .service-cell.left-wrap div:nth-child(1) {
         order: 2;
     }
+    .service-main h3 {
+        position: relative;
+        padding: 0 0 1rem 1rem;
+        cursor: pointer;
+        border-bottom: 1px solid currentColor;
+    }
+    .service-main h3::before {
+        content: "+";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-weight: bold;
+    }
+    .service-main h3.active::before {
+      content: "-";
+    }
+    .service-main p {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+    }
+    .service-main h3.active + p {
+      max-height: 500px;
+      opacity: 1;
+      margin-top: 8px;
+    }
     .equipe-wrap {
         flex-direction: column;
         gap: 1.5rem;
@@ -216,6 +243,7 @@
         font-size: 2rem;
     }
 }
+
 
 
 
