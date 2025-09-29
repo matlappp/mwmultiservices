@@ -21,11 +21,11 @@ cancel.addEventListener('click', closeSidebar);
 darkSidebarOverlay.addEventListener('click', closeSidebar);
 
 document.getElementById("openFormBtn").onclick = function() {
-    document.getElementById("formModal").style.display = "block";
+    document.getElementById("formModal").style.display = "flex";
 };
 
 document.getElementById("openFormBtn2").onclick = function() {
-    document.getElementById("formModal").style.display = "block";
+    document.getElementById("formModal").style.display = "flex";
     closeSidebar();
 };
 
@@ -88,4 +88,5 @@ document.addEventListener("click", function(event) {
         footerDropdown.style.display = "none";
         footerBtn.classList.remove("open");
     }
+
 });
