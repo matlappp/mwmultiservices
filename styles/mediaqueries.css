@@ -84,10 +84,6 @@
     header {
         padding: 2rem 2rem;
     }
-    .section-grid {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: repeat(8, 1fr) !important;
-    }
     .hero-top-wrap.no-video {
         flex-direction: column;
         align-items: flex-start;
@@ -246,6 +242,7 @@
         font-size: 1.8rem;
     }
 }
+
 
 
 
