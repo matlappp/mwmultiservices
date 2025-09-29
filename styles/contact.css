@@ -98,6 +98,9 @@ header {
 .section-3 {
     background-color: var(--white-1);
 }
+.section-3-wrap {
+    width: 100%;
+}
 .section-3-main {
     display: flex;
     flex-direction: column;
@@ -120,4 +123,5 @@ header {
     height: 100%;
     width: 100%;
     max-height: 300px;
+
 }
