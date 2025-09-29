@@ -222,7 +222,6 @@ header #check {
     max-width: 800px;
     border-radius: 12px;
     position: relative;
-    max-height: 800px;
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: #888 transparent;
@@ -625,6 +624,7 @@ footer .max-container {
     gap: 0.6rem;
 
 }
+
 
 
 
