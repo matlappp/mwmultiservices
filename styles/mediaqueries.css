@@ -31,6 +31,9 @@
     }
 }
 @media (max-width: 768px) {
+    main p {
+        font-size: 0.9rem;
+    }
     .popup-wrap {
         max-height: 750px;
     }
@@ -240,19 +243,9 @@
         display: none;
     }
     h2:not(.hero-main h2) {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
