@@ -237,7 +237,7 @@ header #check {
 }
 .popup-wrap::-webkit-scrollbar-thumb:hover {
   background-color: #555;
-
+}
 .popup-wrap::-webkit-scrollbar-button {
   display: none;
   height: 0;
@@ -623,6 +623,7 @@ footer .max-container {
     gap: 0.6rem;
 
 }
+
 
 
 
