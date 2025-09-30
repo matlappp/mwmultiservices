@@ -2,6 +2,11 @@ const btn = document.getElementById('btn');
 const cancel = document.getElementById('cancel');
 const sidebar = document.getElementById('sidebar');
 const darkSidebarOverlay = document.getElementById('darkSidebarOverlay');
+const body = document.body;
+const modal = document.getElementById("formModal");
+const openBtn1 = document.getElementById("openFormBtn");
+const openBtn2 = document.getElementById("openFormBtn2");
+const closeBtn = document.getElementById("closeFormBtn");
 
 function closeSidebar() {
     sidebar.classList.remove('active');
@@ -20,22 +25,30 @@ btn.addEventListener('click', () => {
 cancel.addEventListener('click', closeSidebar);
 darkSidebarOverlay.addEventListener('click', closeSidebar);
 
-document.getElementById("openFormBtn").onclick = function() {
-    document.getElementById("formModal").style.display = "flex";
-};
+function openModal() {
+    modal.style.display = "flex";
+    if (window.innerWidth <= 768) {
+        body.style.overflow = "hidden";
+    }
+}
 
-document.getElementById("openFormBtn2").onclick = function() {
-    document.getElementById("formModal").style.display = "flex";
+function closeModal() {
+    modal.style.display = "none";
+    body.style.overflow = "";
+}
+
+openBtn1.onclick = openModal;
+
+openBtn2.onclick = function() {
+    openModal();
     closeSidebar();
 };
 
-document.getElementById("closeFormBtn").onclick = function() {
-    document.getElementById("formModal").style.display = "none";
-};
+closeBtn.onclick = closeModal;
 
 window.onclick = function(event) {
-    if (event.target == document.getElementById("formModal")) {
-      document.getElementById("formModal").style.display = "none";
+    if (event.target === modal) {
+        closeModal();
     }
 };
 
@@ -60,10 +73,10 @@ const sidebarBtn = document.getElementById("sidebarServicesBtn");
 const sidebarDropdown = document.getElementById("sidebarServicesDropdown");
 
 sidebarBtn.addEventListener("click", function(event) {
-        event.stopPropagation();
-        const isOpen = sidebarDropdown.style.display === "flex";
-        sidebarDropdown.style.display = isOpen ? "none" : "flex";
-        sidebarBtn.classList.toggle("open", !isOpen);
+    event.stopPropagation();
+    const isOpen = sidebarDropdown.style.display === "flex";
+    sidebarDropdown.style.display = isOpen ? "none" : "flex";
+    sidebarBtn.classList.toggle("open", !isOpen);
 });
 
 document.addEventListener("click", function(event) {
@@ -88,5 +101,4 @@ document.addEventListener("click", function(event) {
         footerDropdown.style.display = "none";
         footerBtn.classList.remove("open");
     }
-
 });
