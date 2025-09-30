@@ -178,9 +178,12 @@
     }
 }
 @media (max-width: 600px) {
-    .separate .left, .separate .right {
+    .separate div {
         padding: 1rem;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+    }
+    .separate a {
+        padding: 0.8rem;
     }
     #openFormBtn span {
         display: none;
@@ -221,8 +224,7 @@
         padding-right: 0px;
     }
     .text-box {
-        font-size: 13px;
-        padding: 0px 10px;
+        padding: 0;
     }
     .right-container {
         left: 0;
@@ -246,3 +248,4 @@
         max-height: 250px;
     }
 }
+
