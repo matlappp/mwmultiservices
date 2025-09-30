@@ -113,7 +113,6 @@ header {
     background-color: var(--brown-1);
     color: var(--grey-1);
     border-top: 2px solid var(--grey-1);
-    border-bottom: 2px solid var(--grey-1);
 }
 .cut h3 {
     font-family: RobotoSemiBold;
@@ -234,6 +233,7 @@ header {
     width: 500px;
     height: 400px;
 }
+
 
 
 
