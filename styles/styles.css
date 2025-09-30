@@ -4,6 +4,18 @@
 * {
     margin: 0;
 }
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
 :root {
     --white-1: #F1F2F2;
     --white-2: #C0C0C0;
@@ -624,6 +636,7 @@ footer .max-container {
     gap: 0.6rem;
 
 }
+
 
 
 
