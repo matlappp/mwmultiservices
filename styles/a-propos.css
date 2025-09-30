@@ -4,7 +4,6 @@ h2 {
 }
 .equipe {
     color: var(--grey-1);
-    padding: 2rem 4rem;
 }
 .equipe-wrap {
     display: flex;
@@ -182,6 +181,7 @@ h2 {
     background-color: var(--grey-1);
 
 }
+
 
 
 
