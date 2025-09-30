@@ -272,7 +272,13 @@
                             <h2>Nos dernières réalisations</h2>
                             <div class="section-grid">
                                 <div class="cell">
-                                    <img src="./assets/grid1-p.jpeg" alt="">
+                                    <img 
+                                    src="./assets/grid1-p-250.webp" 
+                                    srcset="./assets/grid1-p-250.webp 250w,
+                                            ./assets/grid1-p-500.webp 500w"
+                                    sizes="(max-width: 768px) 100vw, 250px"
+                                    alt="Réalisation 1"
+                                    loading="lazy">
                                 </div>
                                 <div class="cell">
                                     <img src="./assets/grid2-v.JPG" alt="">
@@ -622,6 +628,7 @@
     <script src="./scripts/testimonials.js"></script>
 </body>
 </html>
+
 
 
 
