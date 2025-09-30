@@ -103,13 +103,17 @@ document.addEventListener("click", function(event) {
     }
 });
 
-function removeTextGroup() {
+function adjustLogoViewBox() {
     const svg = document.querySelector('.svg-logo');
-    const textGroup = svg.querySelector('g');
-    if (window.innerWidth < 600 && textGroup) {
-        textGroup.remove();
+
+    if (!svg) return;
+
+    if (window.innerWidth < 600) {
+        svg.setAttribute('viewBox', '0 0 250 230');
+    } else {
+        svg.setAttribute('viewBox', '0 0 948.52 231.29');
     }
 }
 
-removeTextGroup();
-window.addEventListener('resize', removeTextGroup);
+adjustLogoViewBox();
+window.addEventListener('resize', adjustLogoViewBox);
