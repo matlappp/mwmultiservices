@@ -452,8 +452,8 @@ nav li > a:not(.home-svg):hover::after, nav li > button:hover::after {
     gap: 0.5rem;
 }
 .testimonial-stars svg {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     fill: var(--white-1);
 }
 .testimonial-text {
@@ -636,6 +636,7 @@ footer .max-container {
     gap: 0.6rem;
 
 }
+
 
 
 
