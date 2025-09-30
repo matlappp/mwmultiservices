@@ -242,4 +242,7 @@
     h2:not(.hero-main h2) {
         font-size: 1.7rem;
     }
+    .section-grid img {
+        max-height: 250px;
+    }
 }
