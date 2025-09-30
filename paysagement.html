@@ -232,7 +232,15 @@
                     <div class="services-wrap">
                         <div class="service-cell right-wrap">
                             <div class="service-img">
-                                <img src="./assets/tourbe.jpeg" alt="">
+                                <img 
+                                    src="./assets/tourbe-500.webp"
+                                    srcset="
+                                        ./assets/tourbe-500.webp 500w,
+                                        ./assets/tourbe-1000.webp 1000w,
+                                        ./assets/tourbe-p-2000.webp 2000w"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                    alt="Pose de tourbe"
+                                    loading="lazy">
                             </div>
                             <div class="service-main right">
                                 <h3>Pose de tourbe</h3>
@@ -268,7 +276,15 @@
                                 <p>Mettez en valeur vos espaces extérieurs grâce à notre service de taillage de haies. Une taille régulière favorise une croissance saine, préserve la densité du feuillage et assure une apparence élégante toute l'année. Qu'il s'agisse de donner une forme esthétique ou de maintenir la hauteur désirée, notre équipe veille à un travail soigné et précis. Offrez à votre propriété un cachet raffiné et ordonné avec des haies bien entretenues.</p>
                             </div>
                             <div class="service-img">
-                                <img src="./assets/haies.JPG" alt="">
+                                <img 
+                                    src="./assets/haies-500.webp"
+                                    srcset="
+                                        ./assets/haies-500.webp 500w,
+                                        ./assets/haies-1000.webp 1000w,
+                                        ./assets/haies-p-2000.webp 2000w"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                    alt="Taillage de haies"
+                                    loading="lazy">
                             </div>
                         </div>                        
                     </div>
@@ -680,5 +696,6 @@
     <script src="./scripts/services.js"></script>
 </body>
 </html>
+
 
 
