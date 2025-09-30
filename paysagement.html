@@ -213,7 +213,15 @@
                                 <p>Offrez à votre terrain une apparence soignée et uniforme grâce à notre service de tonte de pelouse. Nous utilisons des techniques adaptées pour favoriser une croissance saine de votre gazon tout en maintenant une hauteur idéale. Une pelouse bien entretenue améliore non seulement l'esthétisme de votre propriété, mais contribue aussi à sa valeur et à votre confort. Profitez d'un gazon vert, dense et agréable, sans le souci de l'entretien régulier.</p>
                             </div>
                             <div class="service-img">
-                                <img src="./assets/grid5-p.jpeg" alt="">
+                                <img 
+                                    src="./assets/grid5-p-500.webp"
+                                    srcset="
+                                        ./assets/grid5-p-500.webp 500w,
+                                        ./assets/grid5-p-1000.webp 1000w,
+                                        ./assets/grid5-p-2000.webp 2000w"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                    alt="Tonte de pelouse"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -672,4 +680,5 @@
     <script src="./scripts/services.js"></script>
 </body>
 </html>
+
 
