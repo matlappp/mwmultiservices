@@ -192,9 +192,10 @@
         content: "Soumission";
     }
     .svg-logo {
-        
+        max-width: 50px;
+        min-width: 50px;
     }
-    .svg-logo g, .svg-logo g path {
+    .svg-logo g {
         display: none;
         pointer-events: none;
     }
@@ -252,5 +253,6 @@
         max-height: 250px;
     }
 }
+
 
 
