@@ -191,8 +191,12 @@
     #openFormBtn::after {
         content: "Soumission";
     }
-    .svg-logo > g {
+    .svg-logo {
+        
+    }
+    .svg-logo g, .svg-logo g path {
         display: none;
+        pointer-events: none;
     }
     .sidebar {
         width: 100%;
@@ -248,4 +252,5 @@
         max-height: 250px;
     }
 }
+
 
