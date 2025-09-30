@@ -102,3 +102,14 @@ document.addEventListener("click", function(event) {
         footerBtn.classList.remove("open");
     }
 });
+
+function removeTextGroup() {
+    const svg = document.querySelector('.svg-logo');
+    const textGroup = svg.querySelector('g');
+    if (window.innerWidth < 600 && textGroup) {
+        textGroup.remove();
+    }
+}
+
+removeTextGroup();
+window.addEventListener('resize', removeTextGroup);
