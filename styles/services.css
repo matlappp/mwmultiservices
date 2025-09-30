@@ -79,6 +79,9 @@ header {
     font-size: 5rem;
     font-family: RobotoExtraBold;
 }
+.vitres-h1 {
+    text-wrap: nowrap;
+}
 .hero-main h2 {
     font-family: RobotoBold;
 }
@@ -230,3 +233,4 @@ header {
     width: 500px;
     height: 400px;
 }
+
