@@ -213,7 +213,15 @@
                                 <p>Améliorez l'apparence de votre maison ou de votre bâtiment grâce à notre service spécialisé en lavage de vitres extérieur. Nous utilisons des techniques efficaces et sécuritaires pour enlever saleté, poussière et traces laissées par les intempéries. Vos vitres retrouvent leur transparence et donnent à votre propriété une allure nette et soignée. Profitez d'un résultat impeccable qui met en valeur votre façade et laisse entrer davantage de lumière naturelle.</p>
                             </div>
                             <div class="service-img">
-                                <img src="./assets/grid6-v.JPG" alt="">
+                                <img 
+                                    src="./assets/grid6-v-500.webp"
+                                    srcset="
+                                        ./assets/grid6-v-500.webp 500w,
+                                        ./assets/grid6-v-1000.webp 1000w,
+                                        ./assets/grid6-v-2000.webp 2000w"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                    alt="Lavage de vitres extérieur"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -631,4 +639,5 @@
     <script src="./scripts/services.js"></script>
 </body>
 </html>
+
 
