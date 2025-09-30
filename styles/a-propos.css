@@ -53,6 +53,9 @@ h2 {
 .role {
     font-style: italic;
 }
+.timeline-section {
+    padding: 5rem 3rem !important;
+}
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -179,5 +182,6 @@ h2 {
     background-color: var(--grey-1);
 
 }
+
 
 
