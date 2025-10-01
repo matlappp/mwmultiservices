@@ -634,7 +634,6 @@ footer .max-container {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-
 }
 .section-2-wrap.error {
     display: flex;
