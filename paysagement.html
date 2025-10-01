@@ -314,7 +314,15 @@
                                 <p>Préservez la beauté et la vitalité de vos espaces extérieurs grâce à notre service complet d'entretien paysager. Taille, désherbage, fertilisation et soins saisonniers : nous veillons à ce que vos aménagements demeurent impeccables tout au long de l'année. En confiant l'entretien de votre terrain à notre équipe, vous gagnez en tranquillité d'esprit tout en assurant la longévité et l'élégance de vos espaces verts. Profitez d'un paysage toujours accueillant, sans les contraintes de l'entretien.</p>
                             </div>
                             <div class="service-img">
-                                <img src="./assets/entretienp.JPG" alt="">
+                                <img 
+                                    src="./assets/pc1-500.webp"
+                                    srcset="
+                                        ./assets/pc1-500.webp 500w,
+                                        ./assets/pc1-1000.webp 1000w,
+                                        ./assets/pc1-2000.webp 2000w"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                    alt="Entretien paysager"
+                                    loading="lazy">
                             </div>
                         </div>                        
                     </div>
@@ -736,6 +744,7 @@
     <script src="./scripts/services.js"></script>
 </body>
 </html>
+
 
 
 
