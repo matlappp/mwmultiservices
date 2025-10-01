@@ -638,7 +638,7 @@ footer .max-container {
 .section-2-wrap.error {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     color: var(--grey-1);
 }
 .section-2-wrap.error h2 {
@@ -655,4 +655,3 @@ footer .max-container {
     width: max-content;
     cursor: pointer;
 }
-
