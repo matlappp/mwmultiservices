@@ -184,6 +184,7 @@
     }
     .separate a {
         padding: 0.8rem;
+        width: 150px;
     }
     #openFormBtn span {
         display: none;
@@ -253,7 +254,3 @@
         max-height: 250px;
     }
 }
-
-
-
-
