@@ -204,7 +204,7 @@
         right: -100%;
     }
     .hero-main.index-hero h2, .hero-main.service-hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .hero-main.index-hero h1, .hero-main.service-hero h2 {
         font-size: 1.1rem;
@@ -253,6 +253,7 @@
         max-height: 250px;
     }
 }
+
 
 
 
