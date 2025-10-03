@@ -229,7 +229,15 @@
                                 <p>Créez un espace extérieur unique qui reflète votre style et met en valeur votre propriété grâce à notre service d'aménagement paysager. De la conception à la réalisation, nous vous accompagnons dans chaque étape afin d'harmoniser esthétisme, fonctionnalité et durabilité. Que ce soit pour un jardin accueillant, une terrasse élégante ou des allées pratiques, nous transformons vos idées en un environnement verdoyant et convivial. Offrez-vous un aménagement qui allie beauté et confort au quotidien.</p>
                             </div>
                             <div class="service-img">
-                                <img src="./assets/amenagement.JPG" alt="">
+                                <img 
+                                    src="./assets/amenagement-500.webp"
+                                    srcset="
+                                        ./assets/amenagement-500.webp 500w,
+                                        ./assets/amenagement-1000.webp 1000w,
+                                        ./assets/amenagement-1000.webp 2000w"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                    alt="Aménagement paysager"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -761,6 +769,7 @@
     <script src="./scripts/services.js"></script>
 </body>
 </html>
+
 
 
 
