@@ -623,6 +623,9 @@ footer .max-container {
     flex-direction: column;
     gap: 0.6rem;
 }
+.footer-contact .tm {
+    color: var(--grey-2);
+}
 .socials svg {
     width: 2em;
     height: 2em;
@@ -658,4 +661,3 @@ footer .max-container {
     width: max-content;
     cursor: pointer;
 }
-
