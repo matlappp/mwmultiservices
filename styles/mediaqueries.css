@@ -55,6 +55,9 @@
     .sidebar ul a, .sidebar ul button:not(#openFormBtn2) {
         font-size: 1.2rem;
     }
+    .sidebar-services-dropdown > a {
+        font-size: 1.1rem;
+    }
     #sidebarServicesBtn svg {
         width: 28px;
     }
@@ -264,3 +267,4 @@
         width: 140px;
     }
 }
+
