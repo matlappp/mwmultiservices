@@ -269,7 +269,7 @@
                             </div>
                             <div class="cut-cell">
                                 <h4>Qualité garantie</h4>
-                                <p>Notre équipe dévouée offre un accompagnement personnalisé de façon à réaliser un aménagement tout aussi fonctionnel qu’esthétique afin de répondre aux besoins et à l’image de chacun, et ce, tout au long du projet.</p>
+                                <p>Notre équipe dévouée offre un accompagnement personnalisé de façon à réaliser un aménagement tout aussi fonctionnel qu'esthétique afin de répondre aux besoins et à l’image de chacun, et ce, tout au long du projet.</p>
                             </div>
                         </div>
                     </div>
@@ -303,7 +303,15 @@
                     <div class="services-wrap">
                         <div class="service-cell right-wrap">
                             <div class="service-img">
-                                <img src="./assets/amenagement.JPG" alt="">
+                                <img 
+                                    src="./assets/entretien-500.webp"
+                                    srcset="
+                                        ./assets/entretien-500.webp 500w,
+                                        ./assets/entretien-1000.webp 1000w,
+                                        ./assets/entretien-2000.webp 2000w"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                    alt="Entretien paysager"
+                                    loading="lazy">
                             </div>
                             <div class="service-main right">
                                 <h3>Entretien paysager</h3>
@@ -753,6 +761,7 @@
     <script src="./scripts/services.js"></script>
 </body>
 </html>
+
 
 
 
