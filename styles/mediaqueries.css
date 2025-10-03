@@ -254,3 +254,13 @@
         max-height: 250px;
     }
 }
+@media (max-width: 360px) {
+    .footer-services-dropdown {
+        width: 142px;
+    }
+    .separate div {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+        width: 140px;
+    }
+}
