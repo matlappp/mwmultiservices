@@ -183,7 +183,7 @@ header #check {
     cursor: pointer;
 }
 .sidebar-services-dropdown > a {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
 }
 .sidebar ul a:not(.paysagement-btn, .vitres-btn):hover, .sidebar ul button:not(#openFormBtn2):hover {
     color: var(--brown-1);
@@ -661,3 +661,4 @@ footer .max-container {
     width: max-content;
     cursor: pointer;
 }
+
