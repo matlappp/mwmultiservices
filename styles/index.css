@@ -253,9 +253,6 @@ header {
     font-size: 0.95rem;
 }
 .accordion-item.active .accordion-content {
-    max-height: 350px;
+    max-height: 420px;
     padding: 1rem;
 }
-
-
-
