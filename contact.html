@@ -173,7 +173,7 @@
                 <div class="max-container">
                     <div class="hero-wrap">
                         <div class="hero-video">
-                            <video autoplay muted loop playsinline id="bg-video" poster="/assets/grid2-v-500.webp">
+                            <video autoplay muted loop playsinline id="bg-video">
                                 <source src="/assets/hero.mp4" type="video/mp4">
                             </video>
                             <div class="video-overlay"></div>
@@ -646,6 +646,21 @@
     <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/testimonials.js"></script>
+    <script>
+        const video = document.getElementById('bg-video');
+
+// Try to play the video
+const playPromise = video.play();
+
+if (playPromise !== undefined) {
+  playPromise.catch(() => {
+    // Autoplay blocked → replace with background image
+    video.parentElement.style.backgroundImage = "url('/assets/grid2-v-500.webp')";
+    video.remove();
+  });
+}
+    </script>
 </body>
 </html>
+
 
