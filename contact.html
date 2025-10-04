@@ -37,6 +37,13 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/contact.css">
     <link rel="stylesheet" href="/styles/mediaqueries.css">
+    <style>
+        .hero-video {
+  background-size: cover;       /* make image cover full area */
+  background-repeat: no-repeat; /* prevent tiling */
+  background-position: center;  /* center the image */
+}
+    </style>
 </head>
 <body>
     <div class="root">
@@ -172,9 +179,9 @@
             <section class="hero contact-hero">
                 <div class="max-container">
                     <div class="hero-wrap">
-                        <div class="hero-video">
+                        <div class="hero-video" id="bg-video-container">
                             <video autoplay muted loop playsinline id="bg-video">
-                                <source src="/assets/hero.mp4" type="video/mp4">
+                                <source src="/assets/hero.mp4" type="video/mp4" poster="/assets/hero-fallback.jpg">
                             </video>
                             <div class="video-overlay"></div>
                         </div>
@@ -649,18 +656,19 @@
     <script>
         const video = document.getElementById('bg-video');
 
-// Try to play the video
 const playPromise = video.play();
 
 if (playPromise !== undefined) {
   playPromise.catch(() => {
-    // Autoplay blocked → replace with background image
+    // Autoplay blocked → fallback image
+    const container = document.getElementById('bg-video-container');
     video.parentElement.style.backgroundImage = "url('/assets/grid2-v-500.webp')";
-    video.remove();
+    video.remove(); // remove video so only background shows
   });
 }
     </script>
 </body>
 </html>
+
 
 
