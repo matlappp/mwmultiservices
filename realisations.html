@@ -300,7 +300,15 @@
                             </div>
                             <div class="realisation-dropdown">
                                 <div class="dropdown-img">
-                                    <img src="./assets/amenagement.JPG" alt="Paysagement résidentiel">
+                                    <img 
+                                        src="./assets/amenagement-500.webp"
+                                        srcset="
+                                          ./assets/amenagement-500.webp 500w,
+                                          ./assets/amenagement-1000.webp 1000w,
+                                          ./assets/amenagement-1000.webp 2000w"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                        alt="Paysagement résidentiel"
+                                        loading="lazy">
                                 </div>
                                 <div class="dropdown-img">
                                     <img 
@@ -520,3 +528,4 @@
     <script src="./scripts/realisations.js"></script>
 </body>
 </html>
+
