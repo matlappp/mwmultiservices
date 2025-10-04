@@ -56,7 +56,7 @@
         font-size: 1.2rem;
     }
     .sidebar-services-dropdown > a {
-        font-size: 1.1rem;
+        font-size: 1.1rem !important;
     }
     #sidebarServicesBtn svg {
         width: 28px;
@@ -267,4 +267,5 @@
         width: 140px;
     }
 }
+
 
