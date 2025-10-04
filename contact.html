@@ -37,13 +37,6 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/contact.css">
     <link rel="stylesheet" href="/styles/mediaqueries.css">
-    <style>
-        .hero-video {
-  background-size: cover;       /* make image cover full area */
-  background-repeat: no-repeat; /* prevent tiling */
-  background-position: center;  /* center the image */
-}
-    </style>
 </head>
 <body>
     <div class="root">
@@ -653,20 +646,7 @@
     <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/testimonials.js"></script>
-    <script>
-        const video = document.getElementById('bg-video');
-
-const playPromise = video.play();
-
-if (playPromise !== undefined) {
-  playPromise.catch(() => {
-    // Autoplay blocked → fallback image
-    const container = document.getElementById('bg-video-container');
-    video.parentElement.style.backgroundImage = "url('/assets/grid2-v-500.webp')";
-    video.remove(); // remove video so only background shows
-  });
-}
-    </script>
+    <script src="./scripts/video.js"></script>
 </body>
 </html>
 
