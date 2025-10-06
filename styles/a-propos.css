@@ -179,9 +179,63 @@ h2 {
 }
 .section-2 {
     background-color: var(--grey-1);
-
 }
-
-
-
-
+.questions-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.questions-wrap > div {
+    width: 100%;
+}
+.questions-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.accordion-wrap {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.accordion-item {
+    border-bottom: 1px solid var(--grey-1);
+}
+.accordion-header {
+    cursor: pointer;
+    padding: 0.6rem 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.accordion-header span:first-child {
+    transition: transform 0.3s ease;
+}
+.accordion-header svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.accordion-item.active .accordion-header span:first-child {
+    transform: rotate(45deg);
+}
+.accordion-item:not(.active) .accordion-header:hover {
+  color: #bebebe;
+}
+.accordion-item:not(.active) .accordion-header:hover svg {
+  fill: #bebebe;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 1rem;
+}
+.accordion-content p {
+    font-size: 0.95rem;
+}
+.accordion-item.active .accordion-content {
+    max-height: 800px;
+    padding: 1rem;
+}
