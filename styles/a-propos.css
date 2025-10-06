@@ -185,6 +185,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
+    color: var(--grey-1);
 }
 .questions-wrap > div {
     width: 100%;
@@ -221,10 +222,10 @@ h2 {
     transform: rotate(45deg);
 }
 .accordion-item:not(.active) .accordion-header:hover {
-  color: #bebebe;
+  color: var(--grey-2);
 }
 .accordion-item:not(.active) .accordion-header:hover svg {
-  fill: #bebebe;
+  fill: var(--grey-2);
 }
 .accordion-content {
     max-height: 0;
@@ -239,3 +240,4 @@ h2 {
     max-height: 800px;
     padding: 1rem;
 }
+
