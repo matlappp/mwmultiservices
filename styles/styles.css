@@ -151,8 +151,9 @@ header #check {
     display: none;
 }
 .svg-sidebar {
-    width: 200px;
+    width: 100%;
     max-width: 200px;
+    min-width: 175px;
     fill: var(--grey-1);
 }
 .sidebar-header {
@@ -661,4 +662,5 @@ footer .max-container {
     width: max-content;
     cursor: pointer;
 }
+
 
