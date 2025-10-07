@@ -198,9 +198,6 @@
     .container-img img {
         max-height: 450px;
     }
-    .container-img.top img {
-        object-position: top;
-    }
     .container-img.right img {
         object-position: right;
     }
@@ -276,6 +273,7 @@
         width: 140px;
     }
 }
+
 
 
 
