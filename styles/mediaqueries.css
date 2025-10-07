@@ -77,7 +77,7 @@
         justify-content: center;
         height: 1200px !important;
     }
-    .valeurs-wrap {
+    .valeurs-wrap, .questions-wrap {
         flex-direction: column;
     }
     .stats {
@@ -273,6 +273,7 @@
         width: 140px;
     }
 }
+
 
 
 
