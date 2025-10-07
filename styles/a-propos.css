@@ -111,7 +111,8 @@ h2 {
     height: 100%;
     max-height: 500px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
+    min-height: 300px;
 }
 .white-circle {
     position: absolute;
@@ -240,4 +241,5 @@ h2 {
     max-height: 800px;
     padding: 1rem;
 }
+
 
