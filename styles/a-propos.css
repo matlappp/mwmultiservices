@@ -113,6 +113,9 @@ h2 {
     object-fit: cover;
     min-height: 300px;
 }
+.container-img.top img {
+    object-position: top;
+}
 .white-circle {
     position: absolute;
     background-color: #FFFFFF;
@@ -240,5 +243,6 @@ h2 {
     max-height: 800px;
     padding: 1rem;
 }
+
 
 
