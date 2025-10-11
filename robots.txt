@@ -1,3 +1,6 @@
 User-agent: *
 
+Disallow: /404.html
+Disallow: /forfaits.html
+
 Sitemap: https://mwmultiservices.ca/sitemap.xml
