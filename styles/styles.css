@@ -518,7 +518,7 @@ footer a, footer button {
     color: var(--grey-1);
     text-decoration: none;
 }
-footer-cell a:hover {
+.footer-cell a:hover {
     cursor: pointer;
     color: var(--grey-2);
 }
