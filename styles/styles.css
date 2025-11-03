@@ -41,7 +41,7 @@ main p {
     line-height: 1.6em;
     font-size: 0.95rem;
 }
-ul:not(.forfait-cell ul) {
+ul:not(.forfait-cell ul, .politique ul) {
     padding-left: 0;
     list-style: none;
 }
@@ -666,6 +666,7 @@ footer .max-container {
     width: max-content;
     cursor: pointer;
 }
+
 
 
 
