@@ -5,7 +5,8 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.politique ul {
+.politique ul, blockquote {
   font-size: 0.95rem;
+  margin-bottom: 0.4rem;
   margin-top: 0.3rem;
 }
