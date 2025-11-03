@@ -2,6 +2,10 @@
   color: var(--grey-1);
 }
 .politique h3 {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
+}
+.politique ul {
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
 }
