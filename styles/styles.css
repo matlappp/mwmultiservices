@@ -631,6 +631,10 @@ footer .max-container {
 .footer-contact .tm {
     color: var(--grey-2);
 }
+.footer-contact .tm a {
+    text-decoration: underline;
+    color: currentColor;
+}
 .socials svg {
     width: 2em;
     height: 2em;

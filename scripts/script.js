@@ -117,3 +117,6 @@ function adjustLogoViewBox() {
 
 adjustLogoViewBox();
 window.addEventListener('resize', adjustLogoViewBox);
+
+const yearSpan = document.getElementById('year');
+yearSpan.textContent = new Date().getFullYear();
